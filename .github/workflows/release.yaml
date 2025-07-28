@@ -41,6 +41,10 @@ jobs:
         run: go test -exec sudo -v -race -short ./...
 
       -
+        name: Clean
+        run: ./scripts/clean.sh BIN=${{ env.BIN }}
+
+      -
         name: Release
         uses: goreleaser/goreleaser-action@v6
         with:
