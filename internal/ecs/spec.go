@@ -1,3 +1,4 @@
+// https://www.elastic.co/docs/reference/ecs/ecs-field-reference
 package ecs
 
 import (
@@ -9,7 +10,7 @@ import (
 )
 
 const (
-	Version = "8.11"
+	Version = "9.0.0"
 )
 
 type Log struct {
@@ -38,8 +39,7 @@ type Ecs struct {
 }
 
 type Agent struct {
-	Type    string `json:"type"`
-	Version string `json:"version"`
+	Type string `json:"type"`
 }
 
 type Evt struct {
