@@ -1,0 +1,51 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+permissions:
+  contents: write
+
+env:
+  BIN: ${{ github.workspace }}/bin
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      -
+        name: Set up OS
+        run: |
+          sudo add-apt-repository ppa:dotnet/backports
+          sudo apt update -y
+          sudo apt install -y qemu-utils dotnet9
+
+      -
+        name: Set up Go
+        uses: actions/setup-go@v5
+
+      -
+        name: Tools
+        run: ./scripts/eztools.sh BIN=${{ env.BIN }}
+
+      -
+        name: Test
+        run: go test -exec sudo -v -race -short ./...
+
+      -
+        name: Release
+        uses: goreleaser/goreleaser-action@v6
+        with:
+          distribution: goreleaser
+          version: '~> v2'
+          args: release --clean
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
