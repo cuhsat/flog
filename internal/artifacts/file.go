@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/hiforensics/utils/pkg/sys"
+	"github.com/cuhsat/futils/pkg/sys"
 )
 
 func BaseFile(name string) string {

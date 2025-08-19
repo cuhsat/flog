@@ -8,12 +8,12 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/hiforensics/utils/pkg/hash"
-	"github.com/hiforensics/utils/pkg/sys"
+	"github.com/cuhsat/futils/pkg/hash"
+	"github.com/cuhsat/futils/pkg/sys"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/hiforensics/flog/internal/artifacts"
-	"github.com/hiforensics/flog/internal/ecs"
+	"github.com/cuhsat/flog/internal/artifacts"
+	"github.com/cuhsat/flog/internal/ecs"
 )
 
 const (

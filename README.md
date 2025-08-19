@@ -1,12 +1,12 @@
 # flog
-[![Go Reference](https://pkg.go.dev/badge/github.com/hiforensics/flog.svg)](https://pkg.go.dev/github.com/hiforensics/flog)
-[![Go Report Card](https://goreportcard.com/badge/github.com/hiforensics/flog?style=flat-square)](https://goreportcard.com/report/github.com/hiforensics/flog)
-[![Release](https://img.shields.io/github/release/hiforensics/flog.svg?style=flat-square)](https://github.com/hiforensics/flog/releases/latest)
+[![Go Reference](https://pkg.go.dev/badge/github.com/cuhsat/flog.svg)](https://pkg.go.dev/github.com/cuhsat/flog)
+[![Go Report Card](https://goreportcard.com/badge/github.com/cuhsat/flog?style=flat-square)](https://goreportcard.com/report/github.com/cuhsat/flog)
+[![Release](https://img.shields.io/github/release/cuhsat/flog.svg?style=flat-square)](https://github.com/cuhsat/flog/releases/latest)
 
 Log forensic artifacts as JSON in [ECS](https://www.elastic.co/guide/en/ecs/current/index.html) format.
 
 ```console
-go install github.com/hiforensics/flog@latest
+go install github.com/cuhsat/flog@latest
 ```
 
 ## Usage

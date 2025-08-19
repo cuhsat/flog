@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/hiforensics/utils/pkg/hash"
-	"github.com/hiforensics/utils/pkg/sys"
-	"github.com/hiforensics/utils/pkg/zip"
+	"github.com/cuhsat/futils/pkg/hash"
+	"github.com/cuhsat/futils/pkg/sys"
+	"github.com/cuhsat/futils/pkg/zip"
 )
 
 func TestMain(m *testing.M) {

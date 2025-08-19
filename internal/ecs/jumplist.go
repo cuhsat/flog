@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/hiforensics/flog/internal/types"
+	"github.com/cuhsat/flog/internal/types"
 )
 
 func MapJumpList(s, src string) (log *Log, err error) {

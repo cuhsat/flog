@@ -1,7 +1,7 @@
 package ecs
 
 import (
-	"github.com/hiforensics/flog/internal/types"
+	"github.com/cuhsat/flog/internal/types"
 )
 
 func MapShellBag(s, src string) (log *Log, err error) {

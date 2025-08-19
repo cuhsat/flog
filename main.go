@@ -28,9 +28,9 @@ import (
 	"flag"
 	"io"
 
-	"github.com/hiforensics/utils/pkg/sys"
+	"github.com/cuhsat/futils/pkg/sys"
 
-	"github.com/hiforensics/flog/internal/flog"
+	"github.com/cuhsat/flog/internal/flog"
 )
 
 func main() {

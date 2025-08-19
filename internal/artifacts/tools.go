@@ -5,9 +5,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/hiforensics/utils/pkg/sys"
+	"github.com/cuhsat/futils/pkg/sys"
 
-	"github.com/hiforensics/flog/internal/tools"
+	"github.com/cuhsat/flog/internal/tools"
 )
 
 func Evtxe(src, dir string) (log string, err error) {
